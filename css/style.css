@@ -42,7 +42,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.slides-navigation a.prev {
+/* .slides-navigation a.prev {
   left: 20px;
   background-image: url(../img/icons/prev.png);
 }
@@ -50,7 +50,7 @@ body {
 .slides-navigation a.next {
   right: 20px;
   background-image: url(../img/icons/next.png);
-}
+} */
 
 #navigation {
   background: #e74c3c;
@@ -96,10 +96,9 @@ body {
   position: absolute;
   width: 100%;
   height: 250px;
-  top: 62%;
   z-index: 5;
   text-align: center;
-  margin-top: -125px;
+  margin-top: -225px;
 }
 
 .titleMessage .heading p {
@@ -172,10 +171,4 @@ body {
 .copyrightSection p {
   margin: 0px;
   font-size: 12px;
-}
-
-@media screen and (max-width: 500px) {
-  .slides-navigation {
-    display: none;
-  }
 }

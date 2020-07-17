@@ -39,39 +39,6 @@ $(document).ready(function () {
   })
 
   var skillsTopOffset = $('.skillsSection').offset().top
-  var statsTopOffset = $('.statsSection').offset().top
-
-  var countUpFinished = false
-
-  $(window).scroll(function () {
-    if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
-      $('.chart').easyPieChart({
-        easing: 'easeInOut',
-        barColor: '#fff',
-        trackColor: false,
-        scaleColor: false,
-        lineWidth: 4,
-        size: 152,
-        onStep: function (from, to, percent) {
-          $(this.el).find('.percent').text(Math.round(percent))
-        },
-      })
-    }
-
-    if (
-      !countUpFinished &&
-      window.pageYOffset > statsTopOffset - $(window).height() + 200
-    ) {
-      $('.counter').each(function () {
-        var element = $(this)
-        var endVal = parseInt(element.text())
-
-        element.countup(endVal)
-      })
-
-      countUpFinished = true
-    }
-  })
 
   const nav = $('#navigation')
   const navTop = nav.offset().top
@@ -96,10 +63,4 @@ $(document).ready(function () {
     var targetPosition = $(targetElement).offset().top
     $('html, body').animate({ scrollTop: targetPosition - 50 }, 'slow')
   })
-
-  function getDevIcons() {
-    var elem = document.getElementById('loop')
-    console.log('print the loop')
-    elem.innerHTML = 'test this '
-  }
 })

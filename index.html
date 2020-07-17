@@ -1,98 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172373941-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
+<html>
+  <head>
+    <title>Portfolio</title>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-<link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <div class="container">
+    <link rel="stylesheet" type="text/css" href="css/superslides.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
 
-      <div class="message">
-        <p>This site is currently under construction
-          <i class="fas fa-tools"></i>
-        </p>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <div class="loader"> 
+      <div class="inner"></div>
+    </div>
+
+    <div id="slides" class="custom">
+      <div class="overlay"></div>
+
+      <div class="slides-container">
+        <img src="img/slider1.jpg" alt="" />
+        <img src="img/slider2.jpg" alt="" />
       </div>
+
+      <div class="titleMessage">
+        <div class="heading">
+          <p class="main">TRINA JOY</p>
+          <p class="sub typed"></p>
+        </div>
+      </div>
+
+      <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></a>
+      </nav>
+    </div>
+
+    <nav id="navigation" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="about" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 offset-md-1 mb-4 " >
+            <img class="aboutImage mx-auto d-block" src="img/photo.jpg" />
+          </div>
+
+          <div class="col-md-7">
+            <div class="mx-3">
+              <p>
+                Freelance Web Developer based in Copenhagen. 
+                
+                <p> I studied Computer Science at Københavns Erhvervsakademi. I have worked for
+                  several years in QA and Test Automation and now work as a freelance Web
+                  Developer.
+                </p>
+                  <p> I am open to remote and freelance projects. 
+                </p>
+              </p>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
     
-    <!-- skills   -->
-    <div class="skills">
-      <div>
-        <i class="devicon devicon-bootstrap-plain"></i>
-        <p>bootstrap</p>
-      </div>
-      <div>
-        <i class="devicon devicon-bitbucket-plain"></i>
-        <p>bitbucket</p>
-      </div>
-      <div>
-        <i class="devicon devicon-css3-plain"></i>
-        <p>css3</p>
-      </div>
-      <div>
-        <i class="devicon devicon-express-original"></i>
-        <p>express</p>
-      </div>
-      <div>
-        <i class="devicon devicon-git-plain"></i>
-        <p>git</p>
-      </div>
-      <div>
-        <i class="devicon devicon-html5-plain"></i>
-        <p>html5</p>
-      </div>
-      <div>
-        <i class="devicon devicon-javascript-plain"></i>
-        <p>javascript</p>
-      </div>
-      <div>
-        <i class="devicon devicon-mongodb-plain"></i>
-        <p>mongodb</p>
-      </div>
-      <div>
-        <i class="devicon devicon-nodejs-plain"></i>
-        <p>nodejs</p>
-      </div>
-      <div>
-        <i class="devicon devicon-protractor-plain"></i>
-        <p>protractor</p>
-      </div>
-      <div>
-        <i class="devicon devicon-react-original"></i>
-        <p>react</p>
-      </div>
-      <div>
-        <i class="devicon devicon-typescript-plain"></i>
-        <p>typescript</p>
+    <div id="skills" class="skillsSection">
+      <div class="container">
+        <div id="dev" class="devSection section">
+          <div class="col-md-12 text-center pb-5">
+            <h2>PROGRAMMING SKILLS</h2>
+          </div>
+          <div class="row flex-row mx-5 justify-content-center">
+              <!-- dev icons   -->
+            <div class="mx-2 text-center" id="loop">
+              <i class="devicon devicon-html5-plain"></i>
+              <p>html5</p>
+            </div>
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-css3-plain"></i>
+              <p>css3</p>
+            </div>
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-bootstrap-plain"></i>
+              <p>bootstrap</p>
+            </div> 
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-javascript-plain"></i>
+              <p>javascript</p>
+            </div>
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-react-original"></i>
+              <p>react</p>
+            </div>    
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-express-original"></i>
+              <p>express</p>
+            </div>
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-mongodb-plain"></i>
+              <p>mongodb</p>
+            </div>
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-nodejs-plain"></i>
+              <p>nodejs</p>
+            </div>
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-git-plain"></i>
+              <p>git</p>
+            </div>
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-bitbucket-plain"></i>
+              <p>bitbucket</p>
+            </div>
+            <div class="mx-2 text-center">
+              <i class="devicon devicon-protractor-plain"></i>
+              <p>protractor</p>
+            </div> 
+          </div>  
+        </div>
       </div>
     </div>
 
-    <!-- contact  -->
-    <div class="cta">
-        <div class="item"> 
-          <a href="https://www.linkedin.com/in/katrina-hitchcock-b7729910/"> 
-            <i class="fab fa-linkedin-in"></i>
+    <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <p class="subHeading"> Get in touch</p>
+        <div class="contactItem d-inline p-2">
+          <a href="mailTo:katrina.hitchcock@gmail.com"> 
+            <i class="icon far fa-envelope"></i> 
           </a>
         </div>
-        <div class="item"> 
-          <a href=" https://github.com/trinajoy"> 
-            <i class="fab fa-github"></i>
-        </a>
+        <div class="contactItem d-inline p-2">
+          <a href="https://github.com/trinajoy"> 
+            <i class="icon fab fa-github"></i>
+          </a>
         </div>
+        <div class="contactItem d-inline p-2">
+          <a href="https://www.linkedin.com/in/katrina-hitchcock-b7729910/"> 
+            <i class="icon fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
-  </div>
- </html>
-</body>
+    <div class="copyrightSection">
+      <div class="col-md-12 text-center">
+        <p><i class="far fa-copyright"></i> Copyright Trina Joy 2020 </p>
+      </div>
+    </div>
 
+    <script src="js/countUp.js"></script>
+    <script src="js/countUp-jquery.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous">
+  </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -6,7 +6,7 @@
     "node": "12.8.0"
   },
   "description": "project by @trinajoy",
-  "main": "script.js",
+  "main": "js/script.js",
   "type": "module",
   "scripts": {},
   "author": "",

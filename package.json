@@ -1,11 +1,20 @@
 {
-  "name": "portfolio-demo",
+  "name": "portfolio",
   "version": "1.0.0",
+  "engines": {
+    "npm": "6.14.4",
+    "node": "12.8.0"
+  },
   "description": "project by @trinajoy",
   "main": "script.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",

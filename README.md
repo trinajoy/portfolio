@@ -3,10 +3,9 @@
 - A one page portfolio using jQuery & Bootstrap.
 - prod: https://trina.dev
 
-## Specification
+## Specifications
 
-- animate typing text on slider image
-- add filter in Projects section
+- add filtering in Projects section
 
 ## Sources
 
@@ -14,4 +13,5 @@
 - Slider Icons: https://icons8.com
 - Loader: https://icons8.com/preloaders/
 - Stock Images: https://pexels.com
-- Typed Text on Slider: https://github.com/mattboldt/typed.js/
+- Filter - https://isotope.metafizzy.co/
+- Portfolio Full Screen Images - https://fancyapps.com/fancybox/3/

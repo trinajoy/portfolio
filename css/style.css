@@ -174,9 +174,15 @@ body {
   width: 100%;
 }
 
+.itemsContainer .items {
+  display: flex;
+  align-items: center;
+}
+
 .items li {
   display: inline-block;
   padding: 5px;
+  justify-content: center;
 }
 
 .items li img {

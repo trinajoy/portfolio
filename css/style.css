@@ -57,6 +57,10 @@ body {
   color: #fff;
 }
 
+.nav-item .nav-link {
+  text-align: left;
+}
+
 .navbar-brand,
 .navbar-brand:hover {
   color: #fff;
@@ -293,9 +297,3 @@ body {
   margin: 0px;
   font-size: 12px;
 }
-
-/* @media (max-width: 1000px) {
-  body {
-    scroll-padding-top: 300px;
-  }
-} */

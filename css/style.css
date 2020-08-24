@@ -181,13 +181,13 @@ body {
 }
 
 #portfolio {
-  padding: 7% 5%;
+  padding: 7% 10%;
   margin: 50px auto;
 }
 
 .project-item {
-  display: inline-block;
-  padding: 6%;
+  /* display: inline-block; */
+  padding: 5% 0;
 }
 
 .project-item .icons {
@@ -196,7 +196,7 @@ body {
   height: 40px;
   left: 50%;
   top: 50%;
-  margin: -20px auto 0 -47px;
+  margin: 15px auto 0 -47px;
   text-align: center;
   z-index: 3;
 }

@@ -49,12 +49,29 @@ $(document).ready(function () {
     }
   }
 
-  $('#navigation li a').click(function (e) {
-    e.preventDefault()
-    var targetElement = $(this).attr('href')
-    var targetPosition = $(targetElement).offset().top
-    $('html, body').animate({ scrollTop: targetPosition - 50 }, 'slow')
-  })
+  // scrolling to nav items, small and large screens
+
+  function myFunction(media) {
+    if (media.matches) {
+      $('#navigation li a').click(function (e) {
+        e.preventDefault()
+        var targetElement = $(this).attr('href')
+        var targetPosition = $(targetElement).offset().top
+        $('html').animate({ scrollTop: targetPosition - 170 }, 'slow')
+      })
+    } else {
+      $('#navigation li a').click(function (e) {
+        e.preventDefault()
+        var targetElement = $(this).attr('href')
+        var targetPosition = $(targetElement).offset().top
+        $('html').animate({ scrollTop: targetPosition - 50 }, 'slow')
+      })
+    }
+  }
+
+  var media = window.matchMedia('(max-width: 900px)')
+  myFunction(media) // Call listener function at run time
+  media.addListener(myFunction) // Attach listener function on state changes
 
   $('[data-fancybox]').fancybox()
 

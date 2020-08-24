@@ -30,8 +30,6 @@ $(document).ready(function () {
     },
   })
 
-  var skillsTopOffset = $('.skillsSection').offset().top
-
   const nav = $('#navigation')
   const navTop = nav.offset().top
 

@@ -59,29 +59,7 @@
   </head>
 
   <body>
-    <div class="loader">
-      <div class="inner"></div>
-    </div>
-
-    <div id="slides" class="custom">
-      <div class="overlay"></div>
-
-      <div class="slides-container">
-        <img src="img/headphones.jpg" alt="" />
-        <img src="img/art.jpg" alt="" />
-      </div>
-
-      <div class="titleMessage">
-        <div>
-          <p>katrina j.h.</p>
-        </div>
-      </div>
-
-      <nav class="slides-navigation">
-        <a href="#" class="next"></a>
-        <a href="#" class="prev"></a>
-      </nav>
-    </div>
+    <div class="test"></div>
 
     <nav id="navigation" class="navbar navbar-expand-lg pl-4">
       <a class="navbar-brand" href="#">Home</a>
@@ -115,41 +93,26 @@
     </nav>
 
     <div id="about" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 offset-md-1 mb-4">
-            <img class="aboutImage mx-auto d-block" src="img/photo.jpg" />
-          </div>
-
-          <div class="col-md-7">
-            <div class="mx-3">
-              <h5>Web Developer based in Copenhagen</h5>
-
-              <p>
-                I studied Computer Science at K&#248;benhavns Erhvervsakademi. I
-                have worked for several years in QA and Test Automation and now
-                looking for opportunities as a Web Developer.
-              </p>
-              <p>I am open to remote and freelance projects.</p>
+      <div class="image-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 offset-md-1 mb-4">
+              <img class="aboutImage mx-auto d-block" src="img/photo.jpg" />
             </div>
-            <div class="contactSection mx-3">
-              <h5 class="pb-2">Get in touch</h5>
-              <div class="contactItem d-inline pr-2">
-                <a href="mailTo:katrina.hitchcock@gmail.com">
-                  <i class="icon far fa-envelope"></i>
-                </a>
-              </div>
-              <div class="contactItem d-inline pr-2">
-                <a href="https://github.com/trinajoy">
-                  <i class="icon fab fa-github"></i>
-                </a>
-              </div>
-              <div class="contactItem d-inline pr-2">
-                <a
-                  href="https://www.linkedin.com/in/katrina-hitchcock-b7729910/"
-                >
-                  <i class="icon fab fa-linkedin-in"></i>
-                </a>
+
+            <div class="col-md-7">
+              <div class="mx-3">
+                <div class="about-container">
+                  <h5>About Me</h5>
+
+                  <p>I'm Katrina, a Web Developer based in Copenhagen.</p>
+                  <p>
+                    I studied Computer Science at K&#248;benhavns
+                    Erhvervsakademi where I then worked for several years in QA
+                    and Test Automation.
+                  </p>
+                  <p>I'm now looking for opportunities as a Web Developer.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -162,43 +125,83 @@
         <div class="row flex-row mx-5 justify-content-center">
           <!-- dev icons   -->
           <div class="mx-2 text-center" id="loop">
-            <i class="devicon devicon-html5-plain"></i>
+            <div class="icon-container">
+              <img class="tech-logos" src="/img/icons/html-5.svg" alt="logo" />
+            </div>
             <p>html5</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-css3-plain"></i>
+            <div class="icon-container">
+              <img class="tech-logos" src="/img/icons/css.svg" alt="logo" />
+            </div>
             <p>css3</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-bootstrap-plain"></i>
+            <div class="icon-container">
+              <img
+                class="tech-logos"
+                src="/img/icons/bootstrap.svg"
+                alt="logo"
+              />
+            </div>
             <p>bootstrap</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-javascript-plain"></i>
+            <div class="icon-container">
+              <img
+                class="tech-logos"
+                src="/img/icons/javascript.svg"
+                alt="logo"
+              />
+            </div>
             <p>javascript</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-express-original"></i>
+            <div class="icon-container">
+              <img
+                class="tech-logos"
+                src="/img/icons/expressjs.svg"
+                alt="logo"
+              />
+            </div>
             <p>express</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-mongodb-plain"></i>
+            <div class="icon-container">
+              <img class="tech-logos" src="/img/icons/mongodb.svg" alt="logo" />
+            </div>
             <p>mongodb</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-nodejs-plain"></i>
+            <div class="icon-container">
+              <img class="tech-logos" src="/img/icons/nodejs.svg" alt="logo" />
+            </div>
             <p>nodejs</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-git-plain"></i>
+            <div class="icon-container">
+              <img class="tech-logos" src="/img/icons/github.svg" alt="logo" />
+            </div>
             <p>git</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-bitbucket-plain"></i>
+            <div class="icon-container">
+              <img
+                class="tech-logos"
+                src="/img/icons/bitbucket.svg"
+                alt="logo"
+              />
+            </div>
             <p>bitbucket</p>
           </div>
           <div class="mx-2 text-center">
-            <i class="devicon devicon-protractor-plain"></i>
+            <div class="icon-container">
+              <img
+                class="tech-logos"
+                src="/img/icons/protractor.svg"
+                alt="logo"
+              />
+            </div>
             <p>protractor</p>
           </div>
         </div>
@@ -333,11 +336,38 @@
       </div>
     </div>
 
-    <div class="copyrightSection">
+    <!-- <div class="copyrightSection">
       <div class="col-md-12 text-center">
         <p><i class="far fa-copyright"></i> Copyright Trina Joy 2020</p>
       </div>
-    </div>
+    </div> -->
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <ul class="footer-icons">
+          <li class="footer-item">
+            <a class="footer-link" href="https://github.com/trinajoy">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="footer-item">
+            <a
+              class="footer-link"
+              href="https://www.linkedin.com/in/katrina-hitchcock-b7729910"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="mailto:katrina.hitchcock@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p>© Copyright 2020 Katrina J.H</p>
+      </div>
+    </footer>
 
     <script src="js/countUp.js"></script>
     <script src="js/countUp-jquery.js"></script>

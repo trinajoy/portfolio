@@ -508,18 +508,12 @@ sections  */
   background-color: #900d0d;
   font-size: 14px;
   text-align: center;
-  padding: 2% 0;
+  padding: 20px 0 10px;
 }
 
 #footer p {
   color: white;
-  font-size: 12px;
-}
-
-#footer i {
-  padding: 5px 5px 0;
-  color: #fff;
-  font-size: 25px;
+  font-size: 10px;
 }
 
 #footer ul {
@@ -530,6 +524,16 @@ sections  */
 #footer li {
   display: inline-block;
   text-align: center;
+}
+
+#footer i {
+  padding: 5px 5px 0;
+  color: #fff;
+  font-size: 25px;
+}
+
+#footer li a i:hover {
+  color: #cd0a0a;
 }
 
 @media (max-width: 1333px) {

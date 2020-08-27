@@ -6,12 +6,12 @@ body {
   font-family: 'Exo', sans-serif;
 }
 
-.test {
-  background-image: url(../img/art.jpg);
+.art {
+  background-image: url(../img/art-medium.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 .titleMessage {
@@ -47,10 +47,6 @@ body {
 #navigation li a:hover {
   color: #cd0a0a;
 }
-
-/* .nav-item:hover {
-  background: #cbeaed;
-} */
 
 .navbar-toggler-icon:active {
   color: blue;
@@ -119,7 +115,7 @@ sections  */
   height: 100%;
   z-index: 0;
   opacity: 0.3;
-  background-image: url(../img/map.png);
+  background-image: url(../img/map-medium.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
@@ -443,7 +439,7 @@ sections  */
 }
 
 .grid-image-top.rex-ray {
-  background-image: url(../img/projects/pmd.png);
+  background-image: url(../img/projects/pmd-small.jpg);
 }
 
 .grid-image-top.sputnik {
@@ -453,7 +449,7 @@ sections  */
 }
 
 .grid-image-top.edgex {
-  background-image: url(../img/projects/underbelly.png);
+  background-image: url(../img/projects/underbelly-small.jpg);
   background-size: cover;
 }
 

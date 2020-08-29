@@ -375,6 +375,10 @@ body {
   font-size: 18px;
 }
 
+.project-links i:hover {
+  background-color: #1b262c;
+}
+
 /* Footer section */
 
 #footer {

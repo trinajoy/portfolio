@@ -1,3 +1,45 @@
+const premiere = document.getElementById('premiere-preview')
+const fitness = document.getElementById('fitness-preview')
+const music = document.getElementById('music-preview')
+
+let wrapper = document.querySelector('.project-info-wrapper')
+
+// hover on project - premiere
+premiere.addEventListener('mouseover', function () {
+  premiere.style.background = '#f6f5f5'
+  wrapper.classList.add('visible')
+})
+
+premiere.addEventListener('mouseout', function () {
+  premiere.style.backgroundImage = 'url(../img/projects/underbelly-small.jpg)'
+  premiere.style.background = ''
+  wrapper.classList.remove('visible')
+})
+
+// hover on project - fitness
+fitness.addEventListener('mouseover', function () {
+  fitness.style.background = '#f6f5f5'
+  fitness.querySelector('.project-info-wrapper').classList.add('visible')
+})
+
+fitness.addEventListener('mouseout', function () {
+  fitness.style.backgroundImage = 'url(../img/projects/pmd-small.jpg)'
+  fitness.style.background = ''
+  fitness.querySelector('.project-info-wrapper').classList.remove('visible')
+})
+
+// hover on project - music
+music.addEventListener('mouseover', function () {
+  music.style.background = '#f6f5f5'
+  music.querySelector('.project-info-wrapper').classList.add('visible')
+})
+
+music.addEventListener('mouseout', function () {
+  music.style.backgroundImage = 'url(../img/projects/music.png)'
+  music.style.background = ''
+  music.querySelector('.project-info-wrapper').classList.remove('visible')
+})
+
 $(window).on('load', function () {
   $('.loader .inner').fadeOut(500, function () {
     $('.loader').fadeOut(750)
@@ -70,34 +112,6 @@ $(document).ready(function () {
   var media = window.matchMedia('(max-width: 900px)')
   myFunction(media) // Call listener function at run time
   media.addListener(myFunction) // Attach listener function on state changes
-
-  $('[data-fancybox]').fancybox()
-
-  $('.items').isotope({
-    filter: '*',
-    animationOptions: {
-      duration: 1500,
-      easing: 'linear',
-      queue: false,
-    },
-  })
-
-  $('.fancybox')
-    .attr('rel', 'gallery')
-    .fancybox({
-      beforeLoad: function () {
-        var el,
-          id = $(this.element).data('title-id')
-
-        if (id) {
-          el = $('#' + id)
-
-          if (el.length) {
-            this.title = el.html()
-          }
-        }
-      },
-    })
 
   $('#filters a').click(function () {
     $('#filters .current').removeClass('current')

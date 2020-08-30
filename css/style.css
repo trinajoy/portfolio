@@ -21,6 +21,10 @@ body {
   padding: 3% 3%;
 }
 
+#contact {
+  padding: 3% 5%;
+}
+
 /* containers  */
 
 .flex-container {
@@ -46,7 +50,7 @@ body {
 }
 
 .art {
-  background-image: url(../img/art-medium.jpg);
+  background-image: url(../img/art.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -376,6 +380,111 @@ body {
 
 .project-links i:hover {
   background-color: #1b262c;
+}
+
+/* Contact form   */
+
+#contact .container .row .col-lg-6 {
+  margin: 0 auto;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact hr {
+  margin-bottom: 110px;
+}
+
+.contact h3 {
+  color: grey;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cat-on-form {
+  position: relative;
+  z-index: 1;
+}
+
+.cat-on-form img {
+  position: absolute;
+  width: 45px;
+  height: auto;
+  z-index: 2;
+  left: 10%;
+  top: -106px;
+}
+
+.contact .form-control {
+  margin-bottom: 0px;
+  position: relative;
+  padding: 0;
+  border-style: none;
+}
+
+.contact .contact-form .form-control input,
+.contact .contact-form .form-control textarea {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  color: #808080;
+  display: block;
+}
+
+.contact .contact-form .form-control input {
+  margin: 6px 0;
+}
+
+.contact .contact-form .form-control textarea {
+  overflow: auto;
+  display: block;
+  resize: none;
+  margin: 6px 0;
+}
+
+.contact .form-control input:focus,
+.contact .form-control textarea:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.contact-form button {
+  width: 100%;
+  display: block;
+  background-color: #900d0d;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+  border-style: none;
+}
+
+.contact button:hover {
+  background-color: grey;
+}
+
+.contact .form-control.error span {
+  visibility: visible;
+}
+
+.contact-form span {
+  display: block;
+  color: grey;
+  visibility: hidden;
+  margin: 8px 0;
+}
+
+.contact-form.sent span {
+  visibility: visible;
+}
+
+#contact .contact-links {
+  margin-top: 60px;
 }
 
 /* Footer section */

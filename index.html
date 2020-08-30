@@ -91,6 +91,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Projects</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -229,7 +232,7 @@
 
     <div id="portfolio" class="section">
       <div class="heading">
-        <h2>PROJECTS</h2>
+        <h2>Projects</h2>
       </div>
 
       <!-- start flex container -->
@@ -348,8 +351,81 @@
     </div>
     <!-- end flex container -->
 
+    <!-- contact form  -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <hr />
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Get in touch</h3>
+
+            <div class="cat-on-form">
+              <img src="img/cat.png" alt="" />
+            </div>
+
+            <form
+              class="contact-form"
+              id="enquiry"
+              action="contactform.php"
+              method="post"
+            >
+              <div class="form-control">
+                <input type="text" name="name" placeholder="name" required />
+              </div>
+
+              <div class="form-control">
+                <input
+                  type="email"
+                  name="mail"
+                  placeholder="name@gmail.com"
+                  required
+                />
+              </div>
+
+              <div class="form-control">
+                <textarea
+                  name="message"
+                  rows="2"
+                  placeholder="your message"
+                  required
+                ></textarea>
+              </div>
+
+              <button class="enquiry" type="submit" name="submit">SEND</button>
+              <span> Your message has been sent</span>
+            </form>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="footer" id="footer">
+              <ul class="contact-links">
+                <li>
+                  <a href="https://github.com/trinajoy">
+                    <i class="fab fa-github icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/katrina-hitchcock-b7729910"
+                    ><i class="fab fa-linkedin-in icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="mailto:katrina.hitchcock@gmail.com">
+                    <i class="fas fa-envelope icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer id="footer">
-      <div class="footer">
+      <p>&#xa9; Copyright 2020 Katrina J.H</p>
+
+      <!-- <div class="footer">
         <ul>
           <li>
             <a href="https://github.com/trinajoy">
@@ -368,7 +444,7 @@
           </li>
         </ul>
         <p>&#xa9; Copyright 2020 Katrina J.H</p>
-      </div>
+      </div> -->
     </footer>
 
     <script src="js/countUp.js"></script>

@@ -4,6 +4,9 @@ const music = document.getElementById('music-preview')
 
 let wrapper = document.querySelector('.project-info-wrapper')
 
+const enquiry = document.querySelector('.enquiry')
+const form = document.querySelector('.contact-form')
+
 // hover on project - premiere
 premiere.addEventListener('mouseover', function () {
   premiere.style.background = '#f6f5f5'
@@ -38,6 +41,17 @@ music.addEventListener('mouseout', function () {
   music.style.backgroundImage = 'url(../img/projects/music.png)'
   music.style.background = ''
   music.querySelector('.project-info-wrapper').classList.remove('visible')
+})
+
+// Event listeners
+form.addEventListener('submit', function (e) {
+  // e.preventDefault()
+
+  //   checkEmail(email)
+  const form = (document.getElementById('enquiry').className =
+    'contact-form sent')
+
+  console.log('submit clicked')
 })
 
 $(window).on('load', function () {

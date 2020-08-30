@@ -111,7 +111,7 @@ $(document).ready(function () {
         e.preventDefault()
         var targetElement = $(this).attr('href')
         var targetPosition = $(targetElement).offset().top
-        $('html').animate({ scrollTop: targetPosition - 170 }, 'slow')
+        $('html').animate({ scrollTop: targetPosition - 190 }, 'slow')
       })
     } else {
       $('#navigation li a').click(function (e) {

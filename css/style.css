@@ -18,11 +18,7 @@ body {
 }
 
 #footer {
-  padding: 3% 3%;
-}
-
-#contact {
-  padding: 3% 5%;
+  padding: 110px 0 0 0;
 }
 
 /* containers  */
@@ -382,24 +378,32 @@ body {
   background-color: #1b262c;
 }
 
-/* Contact form   */
+/* Footer - Contact Form   */
 
-#contact .container .row .col-lg-6 {
-  margin: 0 auto;
-}
-
-#contact {
+#footer {
   text-align: center;
 }
 
-#contact hr {
-  margin-bottom: 110px;
+#footer .container .row .col-lg-6 {
+  margin: 0 auto;
+  padding: 0 60px;
 }
 
-.contact h3 {
-  color: grey;
+#footer {
+  text-align: center;
+  background-color: #900d0d;
+  margin: 0;
+}
+
+.footer h3 {
+  color: white;
   font-size: 16px;
   text-align: center;
+}
+
+.footer p {
+  color: white;
+  font-size: 11px;
 }
 
 .cat-on-form {
@@ -416,15 +420,15 @@ body {
   top: -106px;
 }
 
-.contact .form-control {
+.footer .form-control {
   margin-bottom: 0px;
   position: relative;
   padding: 0;
   border-style: none;
 }
 
-.contact .contact-form .form-control input,
-.contact .contact-form .form-control textarea {
+.footer .contact-form .form-control input,
+.footer .contact-form .form-control textarea {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   width: 100%;
@@ -435,19 +439,19 @@ body {
   display: block;
 }
 
-.contact .contact-form .form-control input {
+.footer .contact-form .form-control input {
   margin: 6px 0;
 }
 
-.contact .contact-form .form-control textarea {
+.footer .contact-form .form-control textarea {
   overflow: auto;
   display: block;
   resize: none;
   margin: 6px 0;
 }
 
-.contact .form-control input:focus,
-.contact .form-control textarea:focus {
+.footer .form-control input:focus,
+.footer .form-control textarea:focus {
   outline: 0;
   border-color: #777;
 }
@@ -455,7 +459,7 @@ body {
 .contact-form button {
   width: 100%;
   display: block;
-  background-color: #900d0d;
+  background-color: grey;
   cursor: pointer;
   border-radius: 4px;
   color: #fff;
@@ -464,17 +468,18 @@ body {
   border-style: none;
 }
 
-.contact button:hover {
-  background-color: grey;
+.footer button:hover {
+  background-color: #52575d;
 }
 
-.contact .form-control.error span {
+.footer .form-control.error span {
   visibility: visible;
 }
 
 .contact-form span {
   display: block;
-  color: grey;
+  color: white;
+  font-weight: lighter;
   visibility: hidden;
   margin: 8px 0;
 }
@@ -483,18 +488,10 @@ body {
   visibility: visible;
 }
 
-#contact .contact-links {
-  margin-top: 60px;
-}
+/* Footer - Contact links */
 
-/* Footer section */
-
-#footer {
-  text-align: center;
-}
-
-#footer p {
-  font-size: 11px;
+#footer .contact-links {
+  margin-top: 20%;
 }
 
 #footer ul {
@@ -523,7 +520,7 @@ body {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   z-index: 1;
 }
 
@@ -556,7 +553,7 @@ body {
 }
 
 #footer ul li:nth-child(1) a:before {
-  background: #1b262c;
+  background: #382933;
 }
 
 #footer ul li:nth-child(2) a:before {
@@ -565,6 +562,22 @@ body {
 
 #footer ul li:nth-child(3) a:before {
   background: #dd4b39;
+}
+
+/* copyright  */
+
+#footer p {
+  font-size: 11px;
+  padding: 35px;
+  margin: 0;
+}
+
+/* Media Queries  */
+
+@media (max-width: 1000px) {
+  #footer .contact-links {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 815px) {
@@ -584,5 +597,10 @@ body {
 @media (max-width: 990px) {
   .nav-item .nav-link {
     text-align: left;
+  }
+
+  #footer .container .row .col-lg-6 {
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }

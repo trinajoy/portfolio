@@ -311,12 +311,11 @@ body {
 }
 
 #premiere-preview {
-  background: url(../img/projects/underbelly-small.jpg) center center/cover
-    no-repeat;
+  background: url(../img/projects/underbelly.jpg) center center/cover no-repeat;
 }
 
 #fitness-preview {
-  background: url(../img/projects/pmd-small.jpg) center center/cover no-repeat;
+  background: url(../img/projects/pmd.jpg) center center/cover no-repeat;
 }
 
 #music-preview {

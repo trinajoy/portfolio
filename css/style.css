@@ -3,7 +3,7 @@ body {
   color: #333;
   background-color: #fff;
   letter-spacing: 1px;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 /* sections  */
@@ -90,7 +90,7 @@ body {
   color: blue;
 }
 .navbar-toggler-icon {
-  background: url('../img/icons/menu.png');
+  background: url("../img/icons/menu.png");
   background-size: 100%;
 }
 
@@ -114,7 +114,7 @@ body {
 }
 
 .image-container::before {
-  content: ' ';
+  content: " ";
   /* display: block; */
   position: absolute;
   left: 0;
@@ -321,6 +321,10 @@ body {
 
 #music-preview {
   background: url(../img/projects/music.png) center center/cover no-repeat;
+}
+
+#newsletter-preview {
+  background: url(../img/projects/newsletter.png) center center/cover no-repeat;
 }
 
 .project-info-wrapper {
@@ -538,7 +542,7 @@ body {
 }
 
 #footer ul li a:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 0;

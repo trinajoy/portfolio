@@ -221,6 +221,7 @@ body {
     transform: translateY(0);
   }
 }
+
 @keyframes swing {
   15% {
     -webkit-transform: translateY(5px);
@@ -325,6 +326,10 @@ body {
 
 #newsletter-preview {
   background: url(../img/projects/newsletter.png) center center/cover no-repeat;
+}
+
+#breakout-preview {
+  background: url(../img/projects/breakout.png) center center/cover no-repeat;
 }
 
 .project-info-wrapper {

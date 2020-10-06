@@ -50,12 +50,6 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
-  $("#slides").superslides({
-    animation: "fade",
-    play: 5000,
-    pagination: false,
-  });
-
   const nav = $("#navigation");
   const navTop = nav.offset().top;
 

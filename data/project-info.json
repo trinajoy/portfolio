@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "premiere": {
+        "id": "premiere",
+        "title": "Video Streaming App",
+        "tech": ["HTML", " CSS", " Javascript", " jQuery", " PHP", " MySQL"],
+        "link": "https://github.com/trinajoy/premiere-no-login",
+        "git": "https://premiere-trina.herokuapp.com/login.php",
+        "image": "../img/projects/underbelly.jpg"
+      },
+      "fitness": {
+        "id": "fitness",
+        "title": "Personal Trainer Profile",
+        "tech": ["HTML", "CSS", "Javascript", "Bootstrap"],
+        "link": "https://trina-fitness-app.herokuapp.com",
+        "git": "https://github.com/trinajoy/fitness-app",
+        "image": "../img/projects/fitness.jpg"
+      },
+      "music": {
+        "id": "music",
+        "title": "Music Player",
+        "tech": ["HTML", "CSS", "Javascript"],
+        "link": "https://trinajoy.github.io/music-player",
+        "git": "https://github.com/trinajoy/music-player",
+        "image": "../img/projects/music.jpg"
+      },
+      "newsletter": {
+        "id": "newsletter",
+        "title": "Newsletter Signup",
+        "tech": ["HTML", "CSS", "Javascript", "Express", "Bootstrap"],
+        "link": "https://trina-newsletter.herokuapp.com",
+        "git": "https://github.com/trinajoy/newsletter-signup-mailchimp",
+        "image": "../img/projects/newsletter.jpg"
+      },
+      "breakout": {
+        "id": "breakout",
+        "title": "Breakout Game",
+        "tech": ["HTML", "CSS", "Javascript"],
+        "link": "https://trinajoy.github.io/breakout-game",
+        "git": "https://github.com/trinajoy/breakout-game",
+        "image": "../img/projects/breakout.jpg"
+      }
+    }
+  ]
+}

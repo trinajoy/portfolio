@@ -22,7 +22,7 @@ icons = [
 ];
 
 // loop through project names and generate mouseover & mouseout effects
-function createProjects() {
+function createAnimations() {
   projectNames.forEach((project) => {
     project.addEventListener("mouseover", function () {
       project.style.background = "#f6f5f5";
@@ -41,7 +41,7 @@ function createProjects() {
   });
 }
 
-createProjects();
+createAnimations();
 
 // loop through dev icons and generate logo and text
 function createDevIcons() {

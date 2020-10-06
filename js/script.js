@@ -4,8 +4,22 @@ const music = document.getElementById("music-preview");
 const newsletter = document.getElementById("newsletter-preview");
 const breakout = document.getElementById("breakout-preview");
 let wrapper = document.querySelector(".project-info-wrapper");
+let dev = document.getElementById("dev-icons");
 
 projectNames = [premiere, fitness, music, newsletter, breakout];
+
+icons = [
+  "html5",
+  "css3",
+  "bootstrap",
+  "javascript",
+  "express",
+  "mongodb",
+  "nodejs",
+  "git",
+  "bitbucket",
+  "protractor",
+];
 
 // loop through project names and generate mouseover & mouseout effects
 function createProjects() {
@@ -28,6 +42,26 @@ function createProjects() {
 }
 
 createProjects();
+
+// loop through dev icons and generate logo and text
+function createDevIcons() {
+  icons.forEach((tech) => {
+    const listItem = document.createElement("div");
+    listItem.innerHTML = `
+    <div class="mx-2 text-center">
+      <div class="icon-container">
+        <img class="tech-logos" src="../img/icons/${tech}.svg" alt="logo" />
+      </div>
+      <p>${tech}</p>
+    </div>
+    </div>
+      `;
+
+    dev.appendChild(listItem);
+  });
+}
+
+createDevIcons();
 
 const enquiry = document.querySelector(".enquiry");
 const form = document.querySelector(".contact-form");

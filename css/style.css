@@ -162,15 +162,6 @@ body {
 
 /* Skills  */
 
-.skill-icons > img {
-  display: flex;
-  padding: 5px 0;
-  margin: 7px;
-  height: 50px;
-  flex: 1;
-  border: 1px solid #ccc;
-}
-
 .icon-container {
   height: 60px;
   width: 60px;

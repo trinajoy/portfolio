@@ -66,7 +66,8 @@ createDevIcons();
 const enquiry = document.querySelector(".enquiry");
 const form = document.querySelector(".contact-form");
 
-// Event listeners
+// contact form event listeners
+
 form.addEventListener("submit", function (e) {
   // e.preventDefault()
 
@@ -76,6 +77,8 @@ form.addEventListener("submit", function (e) {
 
   console.log("submit clicked");
 });
+
+// scrolling
 
 $(window).on("load", function () {
   $(".loader .inner").fadeOut(500, function () {
@@ -124,6 +127,8 @@ $(document).ready(function () {
   var media = window.matchMedia("(max-width: 900px)");
   myFunction(media); // Call listener function at run time
   media.addListener(myFunction); // Attach listener function on state changes
+
+  // filtering
 
   $("#filters a").click(function () {
     $("#filters .current").removeClass("current");

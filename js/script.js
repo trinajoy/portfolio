@@ -14,6 +14,7 @@ icons = [
   "protractor",
 ];
 
+  // add project boxes to DOM
   function createProjects() {
     fetch("data/project-info.json")
       .then((response) => response.json())
@@ -56,24 +57,21 @@ icons = [
 
           container.appendChild(listItem);
 
-          createTechList(project,project.id);
-        
+          createTechList(project,project.id);     
           createAnimations(project.id)
           
-        });
-       
+        });     
       });
   }
 
   createProjects();
 
-  // insert li items into ul `project-tech-stack` div 
+  // insert li items into ul `{project}-tech-stack` div 
   function createTechList(project,id) {
 
     project.tech.forEach((element) => {
 
-     const divID =  (`${id}-tech-stack`);
-
+      const divID =  (`${id}-tech-stack`);
       const ul = document.getElementById(divID);
       const li = document.createElement("li");
 
@@ -101,7 +99,6 @@ icons = [
     });
   }
   
-
   // loop through dev icons and generate logo and text
   function createDevIcons() {
     icons.forEach((tech) => {
@@ -163,7 +160,6 @@ $(document).ready(function () {
   }
 
   // scrolling to nav items, small and large screens
-
   function myFunction(media) {
     if (media.matches) {
       $("#navigation li a").click(function (e) {
@@ -187,7 +183,6 @@ $(document).ready(function () {
   media.addListener(myFunction); // Attach listener function on state changes
 
   // filtering
-
   $("#filters a").click(function () {
     $("#filters .current").removeClass("current");
     $(this).addClass("current");

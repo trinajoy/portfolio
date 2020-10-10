@@ -310,6 +310,10 @@ body {
   background: url(../img/projects/music.png) center center/cover no-repeat;
 }
 
+#lyrics-preview {
+  background: url(../img/projects/lyrics.png) center center/cover no-repeat;
+}
+
 #newsletter-preview {
   background: url(../img/projects/newsletter.png) center center/cover no-repeat;
 }

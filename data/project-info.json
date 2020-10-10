@@ -1,4 +1,3 @@
-
 [
   {
     "id": "premiere",
@@ -21,8 +20,16 @@
     "title": "Music Player",
     "tech": ["HTML", "CSS", "Javascript"],
     "link": "https://trinajoy.github.io/music-player",
-    "git": "https://github.com/trinajoy/music-player",
+    "git": "https://github.com/trinajoy/lyrics-search",
     "image": "../img/projects/music.jpg"
+  },
+  {
+    "id": "lyrics",
+    "title": "Song Lyrics Search",
+    "tech": ["HTML", "CSS", "Javascript"],
+    "link": "https://trinajoy.github.io/lyrics-search",
+    "git": "https://github.com/trinajoy/lyrics-search",
+    "image": "../img/projects/lyrics.jpg"
   },
   {
     "id": "newsletter",
@@ -41,4 +48,3 @@
     "image": "../img/projects/breakout.jpg"
   }
 ]
-

@@ -1,5 +1,5 @@
 const dev = document.getElementById("dev-icons");
-const container = document.getElementById("flex-container")
+const container = document.getElementById("flex-container");
 
 icons = [
   "html5",
@@ -14,15 +14,15 @@ icons = [
   "protractor",
 ];
 
-  // add project boxes to DOM
-  function createProjects() {
-    fetch("data/project-info.json")
-      .then((response) => response.json())
-      .then((data) => {
-        data.forEach((project) => {
-          const listItem = document.createElement("div");
+// add project boxes to DOM
+function createProjects() {
+  fetch("data/project-info.json")
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((project) => {
+        const listItem = document.createElement("div");
 
-          listItem.innerHTML = `
+        listItem.innerHTML = `
 
           <div class="project-wrapper">
             <div class="project-box" id="project-box">
@@ -55,55 +55,51 @@ icons = [
 
           `;
 
-          container.appendChild(listItem);
+        container.appendChild(listItem);
 
-          createTechList(project,project.id);     
-          createAnimations(project.id)
-          
-        });     
+        createTechList(project, project.id);
+        createAnimations(project.id);
       });
-  }
+    });
+}
 
-  createProjects();
+createProjects();
 
-  // insert li items into ul `{project}-tech-stack` div 
-  function createTechList(project,id) {
+// insert li items into ul `{project}-tech-stack` div
+function createTechList(project, id) {
+  project.tech.forEach((element) => {
+    const divID = `${id}-tech-stack`;
+    const ul = document.getElementById(divID);
+    const li = document.createElement("li");
 
-    project.tech.forEach((element) => {
-
-      const divID =  (`${id}-tech-stack`);
-      const ul = document.getElementById(divID);
-      const li = document.createElement("li");
-
-      li.innerHTML = `
+    li.innerHTML = `
         <span> ${element} </span>
-      `
-      ul.appendChild(li);
-    });
-  }
+      `;
+    ul.appendChild(li);
+  });
+}
 
-  // loop through project names and generate mouseover & mouseout effects
-  function createAnimations(project) {
+// loop through project names and generate mouseover & mouseout effects
+function createAnimations(project) {
+  const element = document.getElementById(`${project}-preview`);
 
-    const element = document.getElementById(`${project}-preview`)
+  element.addEventListener("mouseover", function () {
+    element.style.background = "#f6f5f5";
+    element.querySelector(".project-info-wrapper").classList.add("visible");
+  });
 
-    element.addEventListener("mouseover", function () {
-      element.style.background = "#f6f5f5";
-      element.querySelector(".project-info-wrapper").classList.add("visible");
-    });
+  element.addEventListener("mouseout", function () {
+    element.style.backgroundImage = `url(../img/projects/${project}.jpg)`;
+    element.style.background = "";
+    element.querySelector(".project-info-wrapper").classList.remove("visible");
+  });
+}
 
-    element.addEventListener("mouseout", function () {
-      element.style.backgroundImage = `url(../img/projects/${project}.jpg)`;
-      element.style.background = "";
-      element.querySelector(".project-info-wrapper").classList.remove("visible");
-    });
-  }
-  
-  // loop through dev icons and generate logo and text
-  function createDevIcons() {
-    icons.forEach((tech) => {
-      const listItem = document.createElement("div");
-      listItem.innerHTML = `
+// loop through dev icons and generate logo and text
+function createDevIcons() {
+  icons.forEach((tech) => {
+    const listItem = document.createElement("div");
+    listItem.innerHTML = `
       <div class="mx-2 text-center">
         <div class="icon-container">
           <img class="tech-logos" src="../img/icons/${tech}.svg" alt="logo" />
@@ -113,9 +109,9 @@ icons = [
       </div>
         `;
 
-      dev.appendChild(listItem);
-    });
-  }
+    dev.appendChild(listItem);
+  });
+}
 
 createDevIcons();
 
